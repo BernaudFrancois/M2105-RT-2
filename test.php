@@ -10,7 +10,11 @@ include "ex1.php";
 <body>
 <?php
 addition (5, 6);
-createHtmlTable(10,15);
+createHtmlTable(10,12);
+<form method="GET" action="resultats.php">
+    <label for="search">Rechercher sur mon site : </label><input type="text" name="search" id="search">
+    <input type="submit" value="Rechercher">
+</form>
     ?>
 </body>
 </html>
