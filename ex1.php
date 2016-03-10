@@ -52,5 +52,5 @@ echo "<table border='3'>";
 		}
 		echo "</table>";
     }
-
+echo createHtmlTable()
 ?>
