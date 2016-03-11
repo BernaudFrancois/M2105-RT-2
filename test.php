@@ -9,20 +9,18 @@ include "ex1.php";
 </head>
 <body>
 <div>
-    <form action="test.php" method="post">
-        <label for="value">fact : </label>
-        <input type="number" name="value" id="value" style="display: block;">
-
-        <input type="submit" value="OK">
-    </form>
+<!--    <form action="test.php" method="post">-->
+<!--        <label for="value">fact : </label>-->
+<!--        <input type="number" name="value" id="value" style="display: block;">-->
+<!---->
+<!--        <input type="submit" value="OK">-->
+<!--    </form>-->
 
 </div>
 <?php
-var_dump($_POST["value"]);
-if(!empty($_POST)) {
 
-    fact($_POST["value"]);
-}
+
+fact(3);
 
 
 ?>
