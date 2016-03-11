@@ -10,17 +10,18 @@ include "ex1.php";
 <body>
 <div>
     <form action="test.php" method="post">
-        <label for="nbLignes">nb lignes: </label>
-        <input type="number" name="nbLignes" id="nbLignes" style="display: block;">
-        <label for="nbCols">nb colonnes: </label>
-        <input type="number" name="nbCols" id="nbCols" style="display: block;">
+        <label for="value">fact : </label>
+        <input type="number" name="value" id="value" style="display: block;">
+
         <input type="submit" value="OK">
     </form>
 
 </div>
 <?php
+var_dump($_POST["value"]);
 if(!empty($_POST)) {
-    createHtmlTable($_POST['nbLignes'], $_POST['nbCols']);
+
+    fact($_POST["value"]);
 }
 
 
