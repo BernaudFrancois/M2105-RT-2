@@ -8,21 +8,25 @@ include "ex1.php";
 <meta charset="utf-8">
 </head>
 <body>
+<h1>hello world</h1>
 <div>
-<!--    <form action="test.php" method="post">-->
-<!--        <label for="value">fact : </label>-->
-<!--        <input type="number" name="value" id="value" style="display: block;">-->
-<!---->
-<!--        <input type="submit" value="OK">-->
-<!--    </form>-->
+    <form action="test.php" method="post">
+        <label for="value">fact</label>
+        <input type="number" name="value" id="value" style="display: block;">
+
+        <input type="submit" value="OK">
+    </form>
 
 </div>
 <?php
+$valeur = $_POST["value"];
+if(!empty($valeur)) {
+    echo $valeur;
 
 
-fact(3);
+//fact($_POST[value]);
 
-
+}
 ?>
 </body>
 </html>

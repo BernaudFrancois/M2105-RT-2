@@ -12,10 +12,12 @@
 //		echo "</table>";}
 function fact ($factvalue)
 {
+	$factvalue++;
 	$rslt=1;
-	for($i=0;$i=$factvalue;$i++){
+	for($i=1;$i<$factvalue;$i++){
 		$rslt = $rslt*$i;
 	}
 	echo "<h1>résultat : </h1>";
 	echo $rslt;
 }
+?>
