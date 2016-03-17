@@ -11,7 +11,7 @@ include "ex1.php";
 <h1>hello world</h1>
 <div>
     <form action="test.php" method="post">
-        <label for="value">fact</label>
+        <label for="value">fact :</label>
         <input type="number" name="value" id="value" style="display: block;">
 
         <input type="submit" value="OK">
@@ -19,14 +19,13 @@ include "ex1.php";
 
 </div>
 <?php
-$valeur = $_POST["value"];
-if(!empty($valeur)) {
-    echo $valeur;
+
+if(!empty($_POST["value"])) {
+    echo $_POST["value"];
+
+fact($_POST["value"]);}
 
 
-//fact($_POST[value]);
-
-}
 ?>
 </body>
 </html>
