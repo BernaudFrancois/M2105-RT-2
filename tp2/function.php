@@ -6,9 +6,20 @@
  * Time: 15:27
  */
 
-function getHeader($startSession, $title)
+function getHeader($start, $title)
 {
-    echo "<header>
-<h1>$title</h1>
-</header>"
+    if ($start == True){
+        session_start();
+    }
+    echo "<!DOCTYPE html>
+<html lang=\"fr\">
+<head>
+  <meta charset=\"UTF-8\">
+  <title>$title</title>
+  <style rel='stylesheet' type='text/css' href='style/boostrap.min.css'
+</head>
+<body>
+
+</body>
+</html>";
 }
