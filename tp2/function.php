@@ -8,15 +8,7 @@
 
 function getHeader($startSession, $title)
 {
-    echo "<!DOCTYPE html>
-<html lang=\"fr\">
-<head>
-  <meta charset=\"UTF-8\">
-  <title>$title</title>
-  <link rel='stylesheet' type='text/css' href='style.css'>
-</head>
-<body>
-
-</body>
-</html>"
+    echo "<header>
+<h1>$title</h1>
+</header>"
 }
