@@ -6,13 +6,13 @@ function getHeader($start, $title)
         session_start();
     }
     echo "
-<html lang=\"fr\">
+<html>
 <head>
   <meta charset=\"UTF-8\">
   <title>{$title}</title>
-  <style rel='stylesheet' type='text/css' href='style/boostrap.min.css'/>
+  <link rel='stylesheet' type='text/css' href='./style/bootstrap.min.css'/>
 </head>
-<body>"
+<body>";
 }
 function getFooter(){
     echo "</body>
