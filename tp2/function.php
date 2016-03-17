@@ -1,17 +1,11 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: François
- * Date: 17/03/2016
- * Time: 15:27
- */
 
 function getHeader($start, $title)
 {
-    if ($start == True) {
+    if ($start === True) {
         session_start();
     }
-    echo "<!DOCTYPE html>
+    echo "
 <html lang=\"fr\">
 <head>
   <meta charset=\"UTF-8\">
@@ -21,6 +15,6 @@ function getHeader($start, $title)
 <body>"
 }
 function getFooter(){
-echo "</body>
+    echo "</body>
 </html>";
 }
