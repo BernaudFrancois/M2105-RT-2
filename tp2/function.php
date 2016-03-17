@@ -8,18 +8,19 @@
 
 function getHeader($start, $title)
 {
-    if ($start == True){
+    if ($start == True) {
         session_start();
     }
     echo "<!DOCTYPE html>
 <html lang=\"fr\">
 <head>
   <meta charset=\"UTF-8\">
-  <title>$title</title>
-  <style rel='stylesheet' type='text/css' href='style/boostrap.min.css'
+  <title>{$title}</title>
+  <style rel='stylesheet' type='text/css' href='style/boostrap.min.css'/>
 </head>
-<body>
-
-</body>
+<body>"
+}
+function getFooter(){
+echo "</body>
 </html>";
 }
