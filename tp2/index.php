@@ -13,7 +13,7 @@ getHeader(True,"test");
 <?php
 if (!empty($_POST["prenom"])) {
     $_SESSION["user"] = $_POST["prenom"];
-    echo $_SESSION["$user"];
+    echo $_SESSION["user"];
 }
 ?>
 
