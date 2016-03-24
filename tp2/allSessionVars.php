@@ -2,10 +2,11 @@
 include "function.php";
 getHeader(True,"validation");
 
-echo "<h1> titre </h1>";
+echo "<h1> résultats </h1>";
 
 if (!empty($_POST["prenom"])) {
-    $_SESSION["user"] = $_POST["prenom"];
+    $_SESSION["username"] = $_POST["prenom"];
+    $_SESSION["userage"] = $_POST["num"];
 //    echo $_SESSION["user"];
 }
 
