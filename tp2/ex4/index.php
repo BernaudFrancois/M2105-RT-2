@@ -18,6 +18,7 @@ getHeader(True,"test");
     </form>
 </div>
 <?php
+echo blabla
     ?>
 
 
