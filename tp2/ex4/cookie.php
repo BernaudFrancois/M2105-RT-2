@@ -1,14 +1,18 @@
 <?php
 
 include "../function.php";
-getHeader(True,"ex2validation");
-$temps = 5*60;
+getHeader(True,"ex4validation");
+
 ?>
 <?php
-$_SESSION["nav"] = $_POST["browser"];
+$_SESSION["social"] = $_POST["network"];
 
-if (array_key_exists("browser",$_POST)){
-    echo $_SESSION["nav"];
+if (array_key_exists("network",$_POST)){
+    foreach ($_SESSION["social"] as $value){
+        echo "<p>valeur de la session : {$value} </p>";
+    }
+
+
 }
 
 getFooter();

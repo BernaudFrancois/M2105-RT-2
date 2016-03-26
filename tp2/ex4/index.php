@@ -5,15 +5,14 @@ getHeader(True,"test");
 
 ?>
 <div>
-    <form action="cookie3.php" method="post">
+    <form action="cookie.php" method="post">
         <fieldset>
-            <legend>nav préféré</legend>
-            <input name="browser" value="Chrome" type="radio"><label>Chrome</label>
-            <input name="browser" value="firefox" type="radio"><label>firefox</label>
-            <input type="radio" name="browser" value="IE"><label>IE</label>
-            <input type="radio" name="browser" value="opera"><label>opera</label>
-            <input type="radio" name="browser" value="autre"><label>autre</label>
-            <input class="btn btn-default" type="submit" value="OK">
+            <legend>reseau social régulier</legend>
+            <input name="network[]" value="facebook" type="checkbox"><label>Facebook</label>
+            <input name="network[]" value="twitter" type="checkbox"><label>twitter</label>
+            <input name="network[]" value="google+" type="checkbox"><label>google+</label>
+            <input name="network[]" value="badoo" type="checkbox"><label>badoo</label>
+            <input class="btn btn-default" type="submit" value="Valider">
         </fieldset>
     </form>
 </div>
