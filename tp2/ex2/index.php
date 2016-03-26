@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 include "../function.php";
-getHeader(false,"test");
+getHeader(true,"test");
 $temps = 5*60;
 ?>
 <div>

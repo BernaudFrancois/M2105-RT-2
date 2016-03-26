@@ -1,12 +1,21 @@
 <?php
 
 include "../function.php";
-getHeader(false,"ex2validation");
+getHeader(true,"ex2validation");
 
 
 
-    echo $_COOKIE["user"];
+?>
+    <form method="post" action="recoAuto.php">
+        <input type="submit" name="delete" value="reset cookie">
+     </form>
 
-
+<?php
+if (!empty($_POST["delete"])){
+if ($_POST["delete"] == "reset cookie"){
+    setcookie("user","",time()-3600);
+   
+}}
+echo $_COOKIE["user"];
 getFooter();
 ?>

@@ -2,6 +2,7 @@
 <?php
 include "../function.php";
 getHeader(True,"test");
+$_SESSION = array(); //détruit variable de session
 session_destroy();
 ?>
 <div class="container">
