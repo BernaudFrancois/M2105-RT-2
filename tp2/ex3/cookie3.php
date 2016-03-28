@@ -8,7 +8,7 @@ $temps = 5*60;
 $_SESSION["nav"] = $_POST["browser"];
 
 if (array_key_exists("browser",$_POST)){
-    echo $_SESSION["nav"];
+    echo "<p> le navigateur préféré est  {$_SESSION['nav']}</p>";
 }
 
 getFooter();
