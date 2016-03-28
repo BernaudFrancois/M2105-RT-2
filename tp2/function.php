@@ -21,14 +21,14 @@ function getFooter(){
 function getQuestion(){
     $questions=array();
 
-    $questions[]=["Quel est votre navigateur favori ?",
-            ["multiple"=>false,
+    $questions[]=["un" =>"Quel est votre navigateur favori ?",
+            "deux" =>["multiple"=>false,
                     "reponses"=>["Chrome"=>1,"Firefox"=>2,"IE"=>3,"Opera"=>4,"Autre"=>10]
             ]
     ];
 
-    $questions[]=["Quels réseaux sociaux utilisez vous fréquemment ?",
-            ["multiple"=>true,
+    $questions[]=["un" =>"Quels réseaux sociaux utilisez vous fréquemment ?",
+             "deux" =>["multiple"=>true,
                     "reponses"=>["Facebook"=>1,"Twitter"=>2,"Badoo"=>3,"Google+"=>4,"Autre"=>10]
             ]
     ];
@@ -38,8 +38,8 @@ function displayQuestion($question){
     $index = 1;
     foreach ($question as $question){
         echo "<fieldset><legend>Question n°$index</legend>";
-        echo $question[0];
-        $quest = $question[1];
+        echo $question["un"];
+        $quest = $question["deux"];
         $coche="";
         if ($quest["multiple"] == True){
             $coche = "checked";
@@ -52,4 +52,20 @@ function displayQuestion($question){
         echo "</ul></fieldset>";
         $index++;
     }
+}
+function display1Question($index,$question){
+    $index+=1;
+    echo "<fieldset><legend>Question n°$index</legend>";
+    echo $question["un"];
+    $quest = $question["deux"];
+    $coche="";
+    if ($quest["multiple"] == True){
+        $coche = "checked";
+    }
+    echo "<input type='checkbox' $coche> Question à réponses multiples";
+    echo "<ul>";
+    foreach ($quest["reponses"] as $arg=>$value){
+        echo "<li>$arg</li>";
+    }
+    echo "</ul></fieldset>";
 }

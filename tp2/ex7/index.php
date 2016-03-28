@@ -2,8 +2,8 @@
 <?php
 include "../function.php";
 getHeader(true,"test");
-$question = getQuestion();
-displayQuestion($question);
+
+displayQuestion(getQuestion());
 ?>
 
 
