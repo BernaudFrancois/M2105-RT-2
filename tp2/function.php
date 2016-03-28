@@ -35,7 +35,21 @@ function getQuestion(){
     return $questions;
 }
 function displayQuestion($question){
-    foreach ($question as $show){
-        
+    $index = 1;
+    foreach ($question as $question){
+        echo "<fieldset><legend>Question n°$index</legend>";
+        echo $question[0];
+        $quest = $question[1];
+        $coche="";
+        if ($quest["multiple"] == True){
+            $coche = "checked";
+        }
+        echo "<input type='checkbox' $coche> Question à réponses multiples";
+        echo "<ul>";
+        foreach ($quest["reponses"] as $arg=>$value){
+            echo "<li>$arg</li>";
+        }
+        echo "</ul></fieldset>";
+        $index++;
     }
 }
